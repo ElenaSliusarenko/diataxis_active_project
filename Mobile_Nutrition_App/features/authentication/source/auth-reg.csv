@@ -1,0 +1,17 @@
+,The process of authorization and registration of users on the existing Cognito
+,
+,Registration via email with password
+,Email verification via code
+,Login via Google OAuth
+,Login via Apple ID
+,Login for existing users (email + password)
+,Password recovery (forgot password flow)
+,Logout
+,Automatic login upon reopening (remember me)
+,Registration via phone number
+,SMS verification
+,Login via Facebook OAuth
+,Two-factor authentication (2FA)
+,"Biometric authentication (Face ID, Touch ID, fingerprint)"
+,Change email
+,Change password from settings
