@@ -148,7 +148,7 @@ See [ROADMAP.md](./ROADMAP.md) for detailed timeline.
 ## Key Decisions
 
 ### ADR-001: Scope and Constraints
-- MVP focus on authentication and basic meal logging
+- MVP foundation: Authentication & Registration (other MVP features documented separately)
 - Cross-platform from day one
 - AWS-first infrastructure
 - GDPR baseline compliance
