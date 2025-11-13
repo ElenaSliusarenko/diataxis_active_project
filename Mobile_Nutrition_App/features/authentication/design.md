@@ -69,6 +69,15 @@ COGNITO_REDIRECT_URI_WEB=https://app.example.com/auth/callback   # placeholder
 - Log auth events; alert on thresholds (see Monitoring protocol)
 - Track p50/p95/p99 latency for sign-in/sign-up/refresh
 
+## Feature Flags & Rollout
+- Core Authentication & Registration is foundational and not guarded by a feature flag. Rollout is managed via environments/releases.
+- Future extensions SHOULD use feature flags (naming per convention):
+  - Examples: `feature.auth.social_login.global`, `feature.auth.mfa.global`
+- Staged rollout for auth-related UI changes follows Monitoring and Performance SLA:
+  - 5% → 25% → 50% → 100% with rollback if SLOs are not met
+  - Gate on error rate and latency thresholds defined in Performance SLA; monitor via Monitoring dashboards
+- Log feature flag evaluations for audit where applicable (extensions)
+
 ## Related
 - Security Overview: ../../docs/security/README.md
 - Data Protection: ../../docs/security/data-protection.md
