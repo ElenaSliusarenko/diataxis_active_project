@@ -11,6 +11,6 @@ Understanding-oriented content about concepts and design decisions.
 ### Decisions
 - [Why We Chose Microservices](decisions/why-we-chose-microservices.md)
 
-## Using Explanations
+## Using Explanation
 
 These documents help you understand the "why" behind our system. Read these to gain deeper conceptual knowledge.
