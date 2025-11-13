@@ -38,4 +38,4 @@ An ADR is a short document that records an important architectural decision made
 - Incident Response: ../security/incident-response.md
 
 ---
-Last Updated: 2025-11-11
+Last Updated: 2025-11-12
