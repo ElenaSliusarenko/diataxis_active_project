@@ -15,7 +15,7 @@ Explanations clarify the “why” behind decisions and architectures. They prov
 - Why AWS Cognito for identity vs Auth0/Firebase (cost, security, lock-in, SDKs)
 - Why Hosted UI + PKCE for MVP vs custom UI (risk, velocity, UX trade-offs)
 - Token storage strategies: Keychain/Keystore vs web cookies
-- Data residency considerations (us-east-2) and compliance baseline (GDPR, HIPAA)
+- Data residency considerations and compliance baseline (privacy, HIPAA)
 - Rate limiting strategy and abuse prevention for auth flows
 - Error envelope rationale and mapping from Cognito codes
 - Monitoring philosophy: what we measure and why

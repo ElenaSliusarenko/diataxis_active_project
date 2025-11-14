@@ -19,7 +19,7 @@ This guide helps you get started as a contributor to the Mobile Nutrition App pr
 - **iOS**: Xcode 14+, Swift 5.7+
 - **Android**: Android Studio, Kotlin 1.8+
 - **Web**: Node.js 18+, React 18+
-- **AWS**: AWS CLI configured, access to Cognito User Pool (us-east-2)
+- **AWS**: AWS CLI configured, access to Cognito User Pool
 
 ### For QA/Testers
 - Access to test devices (iOS/Android) or simulators
@@ -111,7 +111,7 @@ npm run dev
 1. Obtain Cognito User Pool ID and App Client IDs from team lead
 2. Set environment variables:
    ```bash
-   export COGNITO_REGION=us-east-2
+   export COGNITO_REGION=<region>  # see ADR-002
    export COGNITO_USER_POOL_ID=<pool-id>
    export COGNITO_APP_CLIENT_ID_MOBILE=<mobile-client-id>
    export COGNITO_APP_CLIENT_ID_WEB=<web-client-id>
@@ -119,7 +119,7 @@ npm run dev
    ```
 3. Configure redirect URIs (placeholders to be finalized per environment)
 
-See [features/authentication/design.md](./features/authentication/design.md#configuration) for details.
+See [features/authentication/design.md](./features/authentication/design.md#configuration) for details (region: see ADR-002).
 
 ---
 

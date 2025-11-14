@@ -1,9 +1,9 @@
 # Requirements: Authentication & Registration
 
 ## Overview
-Cross-platform authentication and registration using AWS Cognito (accepted) for iOS, Android, and Web. Approved: Cognito Hosted UI (Authorization Code + PKCE) with strict redirect URIs.
+Cross-platform authentication and registration using AWS Cognito (accepted) for iOS, Android, and Web. Approved: Cognito Hosted UI (Authorization Code + PKCE) with strict redirect URIs (see ADR-002).
 
-- SDK choice: Native Cognito SDK + Hosted UI wrappers
+- SDK choice: Native Cognito SDK + Hosted UI wrappers (see ADR-002)
 - Note: Redirect URIs listed are placeholders and must be finalized per environment (dev/stage/prod)
 - Region (data residency): see ADR-002
 - Policies (passwords, token lifetimes, lockout, session limits): see Security Overview
@@ -15,7 +15,7 @@ Cross-platform authentication and registration using AWS Cognito (accepted) for 
 ## Functional requirements (MVP)
 1. Sign up (email + password)
    - Validate email format and password policy
-   - Create user in Cognito User Pool (us-east-2)
+   - Create user in Cognito User Pool
    - Email verification via code; confirm sign up
 2. Sign in (email + password)
    - Hosted UI (PKCE) → strict redirect URI → token exchange
@@ -49,7 +49,7 @@ Cross-platform authentication and registration using AWS Cognito (accepted) for 
 - Sessions cleared on sign out; protected routes require re-auth
 
 ## Dependencies
-- AWS Cognito User Pool (us-east-2), App Clients (mobile/web)
+- AWS Cognito User Pool, App Clients (mobile/web)
 - Hosted UI domain with strict redirect URIs
 
 ## References

@@ -79,7 +79,7 @@ Mobile_Nutrition_App/
 - **Identity**: AWS Cognito User Pools (Hosted UI, PKCE)
 - **Backend**: TBD (API Gateway + Lambda or Node.js)
 - **Database**: TBD (PostgreSQL or DynamoDB)
-- **Infrastructure**: AWS (us-east-2)
+- **Infrastructure**: AWS
 
 ---
 

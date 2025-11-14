@@ -6,7 +6,6 @@
 
 ## Authentication
 - Identity provider: AWS Cognito User Pools (see ADR-002)  
-- Region (data residency): us-east-2  
 - Flows (MVP): Sign up/in, Password reset, Token refresh, Sign out  
 - Platform scope: iOS, Android, Web  
 - Sign-in method: Cognito Hosted UI (Authorization Code + PKCE) with strict redirect URIs  
@@ -40,7 +39,7 @@ Note: Redirect URIs in docs are placeholders and must be finalized per environme
 ## Monitoring & Audit
 - Log auth events: login success/failure, password reset, lockouts, session revoke  
 - Alerting thresholds: 50 failed logins/hour (single IP), 10 account lockouts/hour  
-- Log retention: 2 years  
+- Log retention: 5 years  
 - Telemetry: anonymized success rates and latency
 
 ## Operational Playbooks
@@ -49,7 +48,7 @@ Note: Redirect URIs in docs are placeholders and must be finalized per environme
 - Runbook: Email Delivery Issues: ../../runbooks/email-delivery-issues.md  
 
 ## Compliance Notes
-- GDPR: support data subject requests (delete/export); data residency: us-east-2  
+- Privacy baseline: support data subject requests (delete/export)  
 - HIPAA: eligible with BAA (TBD); additional controls required for PHI
 
 ## Related

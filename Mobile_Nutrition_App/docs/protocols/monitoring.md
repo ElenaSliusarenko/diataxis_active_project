@@ -16,7 +16,7 @@
 
 ## Logs & Telemetry
 - Log all auth events with `requestId`, anonymized email, IP, userAgent
-- Retention: 2 years
+- Retention: 5 years
 - No PII (tokens/codes) in logs
 
 ## Dashboards

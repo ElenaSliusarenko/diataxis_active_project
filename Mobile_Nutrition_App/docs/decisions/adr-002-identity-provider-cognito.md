@@ -4,13 +4,13 @@ Status: accepted
 Date: 2025-11-11
 
 ## Context
-We need a secure, scalable identity provider for iOS/Android/Web supporting email/password, password reset, token refresh, and sign out in MVP. Future scope includes social login, phone-based sign up, MFA, and biometrics.
+We need a secure, scalable identity provider for iOS/Android/Web supporting email/password, password reset, token refresh, and sign out in MVP. Future scope includes social login, MFA, and biometrics.
 
 ## Decision
 Use AWS Cognito User Pools as the identity provider. Sign-in method approved: Cognito Hosted UI (Authorization Code + PKCE) with strict redirect URIs.
 
 - Primary identifier: email
-- App Clients: mobile (no client secret) and web
+- App Clients: mobile and web
 - Region: us-east-2
 - Email verification via code
 - Token-based auth (ID/Access/Refresh)
@@ -25,7 +25,7 @@ Note: Redirect URIs referenced in docs are placeholders and must be finalized pe
 ## Implementation Constraints
 - Policies (passwords, token lifetimes, lockout, session limits, rate limits): see Security Overview
 - SDK: Native Cognito SDK + Hosted UI wrappers
-- Redirect URIs: placeholders in docs; finalize per env (dev/stage/prod)
+- Redirect URIs: placeholders in docs; finalize per env (dev/uat/prod)
 
 ## Security Considerations
 - Storage: mobile secure storage; web httpOnly cookies (if applicable)
@@ -33,9 +33,9 @@ Note: Redirect URIs referenced in docs are placeholders and must be finalized pe
 - Certificate pinning recommended for production
 
 ## Compliance Gaps
-- GDPR: right to be forgotten requires app+Cognito deletion
+- Right to be forgotten requires app+Cognito deletion
 - HIPAA: Cognito HIPAA-eligible, but requires BAA and additional controls
-- Audit logging: 2-year retention requires custom storage/retention
+- Audit logging: 5-year retention requires custom storage/retention
 
 ## Open Questions
 - Final redirect URIs per platform (iOS/Android/Web)

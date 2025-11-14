@@ -42,7 +42,7 @@ Empower users to make informed nutrition decisions through intuitive tracking, p
 ┌────────────────────────────────────────────────────────────────────┐
 │                     Identity Layer (AWS)                      │
 │  ┌──────────────────────────────────────────────────────────┐  │
-│  │  Cognito User Pools (us-east-2)                     │  │
+│  │  Cognito User Pools                                  │  │
 │  │  - Hosted UI (Authorization Code + PKCE)           │  │
 │  │  - Email verification, Password reset              │  │
 │  │  - Token management (Access/ID/Refresh)            │  │
@@ -79,7 +79,7 @@ Empower users to make informed nutrition decisions through intuitive tracking, p
    - Offline-first architecture (future)
 
 2. **Identity & Authentication**
-   - AWS Cognito User Pools (us-east-2)
+   - AWS Cognito User Pools
    - Hosted UI with Authorization Code + PKCE flow
    - Token-based auth (Access/ID/Refresh)
    - See [ADR-002](./docs/decisions/adr-002-identity-provider-cognito.md)
@@ -174,7 +174,7 @@ See [ADR Index](./docs/decisions/README.md) for all decisions.
 - No PII in logs; emails masked
 
 ### Compliance
-- **GDPR**: Baseline support (data export/deletion, data residency us-east-2)
+- **Privacy baseline**: Baseline support (data export/deletion)
 - **HIPAA**: Eligible with BAA (TBD, additional controls required)
 
 See [Threat Model](./docs/security/threat-model.md) and [Data Protection](./docs/security/data-protection.md).

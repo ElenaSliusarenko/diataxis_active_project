@@ -11,6 +11,7 @@
 - Do not log PII (emails, verification codes, tokens).
 - Mask emails in logs/telemetry (e.g., `u***@example.com`).
 - Collect only necessary analytics (success/failure, latency) without identifiers.
+  - Note: Web currently requires certain identifiers for analytics. For Mobile, analytics identifier requirements are TBD and must be finalized with Product/Security; default to minimization until clarified.
 
 ## Secrets Management
 - Use AWS Secrets Manager or environment variables for Cognito config.
@@ -20,7 +21,7 @@
 - Enforce TLS 1.2+ (recommend 1.3).
 - Consider certificate pinning for mobile clients (production).
 
-## Data Subject Requests (GDPR)
+## Data Subject Requests
 - Export: provide user data upon verified request.
 - Deletion: delete account data in application and Cognito (right to be forgotten).
 - Document retention exceptions (legal obligations).

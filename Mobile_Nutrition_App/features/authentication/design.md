@@ -42,7 +42,7 @@ Clear storage/cookies → (Optional) GlobalSignOut → return to auth screens
 
 ## Configuration
 ```text
-COGNITO_REGION=us-east-2
+COGNITO_REGION=<region>  # see ADR-002
 COGNITO_USER_POOL_ID=
 COGNITO_APP_CLIENT_ID_MOBILE=
 COGNITO_APP_CLIENT_ID_WEB=
