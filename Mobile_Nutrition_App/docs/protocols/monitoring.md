@@ -1,6 +1,6 @@
 # Monitoring & Alerting
 
-> Last Updated: 2025-11-11  
+> Last Updated: 2025-11-17  
 > Owner: DevOps/Security
 
 ## Metrics
@@ -16,7 +16,7 @@
 
 ## Logs & Telemetry
 - Log all auth events with `requestId`, anonymized email, IP, userAgent
-- Retention: 5 years
+- Retention: see Security Overview
 - No PII (tokens/codes) in logs
 
 ## Dashboards

@@ -1,4 +1,6 @@
-# Testing: Authentication & Registration (MVP)
+# Testing: Authentication & Registration
+
+> Last Updated: 2025-11-17 (MVP)
 
 ## Scope
 Sign up, Sign in, Password reset, Token refresh, Sign out with AWS Cognito (Hosted UI approved) across iOS, Android, and Web.
@@ -34,8 +36,8 @@ Sign up, Sign in, Password reset, Token refresh, Sign out with AWS Cognito (Host
 - Sign up: invalid email format; weak password (policy)
 - Verification: wrong/expired code; resend cooldown; max resends
 - Sign in: invalid credentials (map to INVALID_CREDENTIALS) without enumeration
-- Password reset: token expired/single-use; rate limit 3/hour
-- Lockout: 5 failed attempts / 15 min → email notification; unlock via reset
+- Password reset: token expired/single-use; rate limit per Security Overview
+- Lockout: per Security Overview → email notification; unlock via reset
 - Refresh: invalid/revoked refresh → force sign-in
 - Sessions: exceed 5 concurrent → oldest revoked
 - Cross-platform: token/cookie behavior (mobile vs web), re-install app

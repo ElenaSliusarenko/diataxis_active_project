@@ -166,12 +166,12 @@ See [ADR Index](./docs/decisions/README.md) for all decisions.
 ## Security & Compliance
 
 ### Security Posture
-- Password policy: ≥ 8 chars, mixed case, digit (see [Security Overview](./docs/security/README.md))
-- Token lifetimes: Access 1h, ID 1h, Refresh 30d (Cognito default)
-- Lockout: 5 failed attempts / 15 min
-- Session limits: max 5 concurrent per user
+For detailed security policies (password requirements, token lifetimes, lockout rules, session limits, rate limiting), see [Security Overview](./docs/security/README.md).
+
+Key highlights:
 - Secure storage: Keychain/Keystore (mobile), httpOnly cookies (web)
 - No PII in logs; emails masked
+- TLS 1.2+ end-to-end
 
 ### Compliance
 - **Privacy baseline**: Baseline support (data export/deletion)
@@ -183,12 +183,12 @@ See [Threat Model](./docs/security/threat-model.md) and [Data Protection](./docs
 
 ## Performance Targets
 
-- **Auth flows**: < 5s on 3G, < 10s on 2G
-- **Token refresh**: < 2s
-- **API calls**: p95 < 500ms
-- **App load**: < 2s
+For detailed performance targets and SLAs, see [Performance SLA](./docs/protocols/performance-sla.md).
 
-See [Performance SLA](./docs/protocols/performance-sla.md) for details.
+Key targets:
+- Auth flows: < 5s on 3G
+- Token refresh: < 2s
+- App load: < 2s
 
 ---
 
@@ -245,5 +245,5 @@ See [ROADMAP.md](./ROADMAP.md) for detailed timeline.
 ---
 
 **Document Owner**: Project Lead  
-**Last Updated**: 2025-11-11  
+**Last Updated**: 2025-11-17  
 **Next Review**: Q1 2026

@@ -1,7 +1,8 @@
 # ADR-002: Identity Provider — AWS Cognito
 
 Status: accepted  
-Date: 2025-11-11
+Date: 2025-11-11  
+Last Updated: 2025-11-17
 
 ## Context
 We need a secure, scalable identity provider for iOS/Android/Web supporting email/password, password reset, token refresh, and sign out in MVP. Future scope includes social login, MFA, and biometrics.
@@ -35,7 +36,7 @@ Note: Redirect URIs referenced in docs are placeholders and must be finalized pe
 ## Compliance Gaps
 - Right to be forgotten requires app+Cognito deletion
 - HIPAA: Cognito HIPAA-eligible, but requires BAA and additional controls
-- Audit logging: 5-year retention requires custom storage/retention
+- Audit logging: retention requirements (see Security Overview) require custom storage/retention beyond Cognito defaults
 
 ## Open Questions
 - Final redirect URIs per platform (iOS/Android/Web)

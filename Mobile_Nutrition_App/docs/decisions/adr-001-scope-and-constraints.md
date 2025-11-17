@@ -1,7 +1,8 @@
 # ADR-001: Scope and Constraints — Mobile Nutrition App
 
 Status: accepted  
-Date: 2025-11-11
+Date: 2025-11-11  
+Last Updated: 2025-11-17
 
 ## Context
 We are launching a cross-platform Mobile Nutrition App targeting iOS, Android, and Web. The MVP must deliver secure user onboarding and session management to enable subsequent features (profile, meal logging, barcode scanning). We need a clear scope to ensure speed and reduce risk, while meeting baseline security and performance requirements.

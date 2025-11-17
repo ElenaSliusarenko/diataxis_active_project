@@ -1,5 +1,7 @@
 # Requirements: Authentication & Registration
 
+> Last Updated: 2025-11-17
+
 ## Overview
 Cross-platform authentication and registration using AWS Cognito (accepted) for iOS, Android, and Web. Approved: Cognito Hosted UI (Authorization Code + PKCE) with strict redirect URIs (see ADR-002).
 

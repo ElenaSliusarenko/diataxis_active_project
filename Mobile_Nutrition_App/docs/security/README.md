@@ -1,7 +1,7 @@
 # Security Overview
 
-> Compliance: GDPR (baseline), HIPAA (TBD)  
-> Last Updated: 2025-11-11  
+> Compliance: Privacy baseline, HIPAA (TBD)  
+> Last Updated: 2025-11-17  
 > Owner: Security
 
 ## Authentication
@@ -38,7 +38,7 @@ Note: Redirect URIs in docs are placeholders and must be finalized per environme
 
 ## Monitoring & Audit
 - Log auth events: login success/failure, password reset, lockouts, session revoke  
-- Alerting thresholds: 50 failed logins/hour (single IP), 10 account lockouts/hour  
+- Alerting thresholds: see Monitoring protocol for detailed alert rules
 - Log retention: 5 years  
 - Telemetry: anonymized success rates and latency
 

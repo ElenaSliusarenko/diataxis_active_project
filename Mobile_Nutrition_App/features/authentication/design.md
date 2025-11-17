@@ -1,5 +1,7 @@
 # Design: Authentication & Registration
 
+> Last Updated: 2025-11-17
+
 ## Overview
 AWS Cognito User Pools for iOS, Android, Web. Sign-in method approved: Hosted UI (Authorization Code + PKCE) with strict redirect URIs.
 

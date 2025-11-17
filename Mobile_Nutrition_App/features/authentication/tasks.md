@@ -1,5 +1,7 @@
 # Tasks: Authentication & Registration (MVP)
 
+> Last Updated: 2025-11-17
+
 ## Definition of Ready (DoR)
 - [ ] Phase 0 assessment complete; integration points identified (see ADR-002, Security Overview, Protocols)
 - [ ] References listed in tickets/docs (security, ADRs, protocols)
